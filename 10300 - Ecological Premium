@@ -1,0 +1,20 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    long long int t_cas,a,b,c,f,sum;
+    cin>>t_cas;
+    while(t_cas--){
+        cin>>f;
+        sum=0;
+        while(f--){
+            cin>>a>>b>>c;
+            sum+=a*c;
+        }
+        cout<<sum<<endl;
+    }
+
+
+    return 0;
+}
