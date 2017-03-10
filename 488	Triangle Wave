@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+     string str[] = {"", "1", "22", "333", "4444", "55555", "666666", "7777777", "88888888", "999999999"};
+    register unsigned n, i, j, k;
+    scanf("%u", &n);
+
+    while(n--){
+        unsigned amp, times;
+        cin>>amp>>times;
+
+        while(times--){
+            for(i = 1; i < amp; ++i)
+                cout<<str[i]<<endl;;
+
+            for(k = i; k; --k)
+                cout<<str[k]<<endl;
+
+            if(times || n)
+                printf("\n");
+        }
+    }
+    return 0;
+}
